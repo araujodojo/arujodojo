@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Araujo Dojo — Kyokushin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Araujo Dojo — Kyokushin. Treino, tradição e disciplina." />
+  <style>
+    /* Pequenos ajustes adicionais além do Tailwind */
+    .hero-bg{background-image:linear-gradient(rgba(6,6,23,0.45),rgba(6,6,23,0.45)), url('https://images.unsplash.com/photo-1546549039-6d23e7a9d1b9?q=80&w=1400&auto=format&fit=crop'); background-size:cover; background-position:center;}
+    .paper { background: linear-gradient(180deg,#f8efe0 0%, #f1e6d1 100%); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+  <!-- Header -->
+  <header class="bg-white/90 backdrop-blur sticky top-0 z-40 shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center font-bold">AD</div>
+        <div>
+          <a href="#" class="text-xl font-extrabold">Araujo Dojo</a>
+          <div class="text-xs text-slate-500">Kyokushin Karate • 40 anos</div>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:underline">Sobre</a>
+        <a href="#aulas" class="hover:underline">Aulas</a>
+        <a href="#instrutores" class="hover:underline">Instrutores</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+      </nav>
+      <div class="md:hidden"> <!-- mobile menu placeholder -->
+        <button aria-label="Abrir menu" class="p-2">
+          <svg width="24" height="24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg h-[60vh] flex items-center text-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="w-full md:w-2/3 lg:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Araujo Dojo — 40 Anos de Kyokushin</h1>
+        <p class="mt-4 text-lg md:text-xl text-slate-200">Tradição, disciplina e coragem. Do Mestre Didi à Sensei Danielle — uma linhagem de honra que moldou gerações.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#aulas" class="inline-block bg-white text-black font-semibold px-4 py-2 rounded-md shadow">Conheça as Aulas</a>
+          <a href="#contato" class="inline-block border border-white px-4 py-2 rounded-md">Fale conosco</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto p-6 grid gap-8 lg:grid-cols-3">
+    <!-- About / Story -->
+    <article id="about" class="lg:col-span-2 paper p-6 rounded-lg">
+      <h2 class="text-2xl font-bold">Nossa História</h2>
+      <p class="mt-3 text-slate-700 leading-relaxed">Fundado pelo Mestre Didi, o Araujo Dojo celebra 40 anos de dedicação ao Kyokushin Karate. Sob a liderança da Sensei Danielle, o dojo manteve sua essência de esforço, respeito e verdadeiro espírito marcial. Cultivamos não apenas técnica, mas caráter — formando alunos de 7 a 70 anos que encontram no tatame um caminho para a vida.</p>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        <div class="p-4 rounded-md bg-white/80">
+          <h3 class="font-semibold">Missão</h3>
+          <p class="text-sm text-slate-600 mt-1">Preservar a verdade do Kyokushin e transformar vidas através da disciplina e do treino.</p>
+        </div>
+        <div class="p-4 rounded-md bg-white/80">
+          <h3 class="font-semibold">Visão</h3>
+          <p class="text-sm text-slate-600 mt-1">Ser referência regional em ensino tradicional com espírito inclusivo.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Quick info / Schedule -->
+    <aside class="paper p-6 rounded-lg">
+      <h3 class="text-xl font-bold">Horários</h3>
+      <ul class="mt-3 space-y-2 text-sm text-slate-700">
+        <li><strong>Seg/Qua/Sex</strong> — 19:00 às 20:30 (Adultos)</li>
+        <li><strong>Ter/Qui</strong> — 17:30 às 18:30 (Infantil)</li>
+        <li><strong>Sáb</strong> — 09:00 às 11:00 (Aperfeiçoamento)</li>
+      </ul>
+      <a href="#contato" class="mt-4 inline-block bg-black text-white px-4 py-2 rounded">Matricule-se</a>
+
+      <hr class="my-4" />
+      <h4 class="font-semibold">Local</h4>
+      <p class="text-sm text-slate-600 mt-1">Rua Exemplo, 123 — Centro</p>
+    </aside>
+
+    <!-- Instructors -->
+    <section id="instrutores" class="lg:col-span-2 paper p-6 rounded-lg">
+      <h2 class="text-2xl font-bold">Instrutores</h2>
+      <div class="mt-4 grid sm:grid-cols-2 gap-4">
+        <div class="flex gap-4 items-center">
+          <img src="https://images.unsplash.com/photo-1541872703-4a0b0d3d9a8d?q=80&w=400&auto=format&fit=crop" alt="Mestre Didi" class="w-24 h-24 rounded-full object-cover" />
+          <div>
+            <h4 class="font-semibold">Mestre Didi</h4>
+            <p class="text-sm text-slate-600">Fundador — Legado e disciplina.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="Sensei Danielle" class="w-24 h-24 rounded-full object-cover" />
+          <div>
+            <h4 class="font-semibold">Sensei Danielle</h4>
+            <p class="text-sm text-slate-600">Sucessora do legado do Mestre Didi — Guardiã do Kyokushin no Araujo Dojo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contato" class="paper p-6 rounded-lg">
+      <h3 class="text-xl font-bold">Fale conosco</h3>
+      <form class="mt-3 space-y-3">
+        <input class="w-full border px-3 py-2 rounded" placeholder="Nome" />
+        <input class="w-full border px-3 py-2 rounded" placeholder="E-mail" />
+        <textarea class="w-full border px-3 py-2 rounded" rows="4" placeholder="Mensagem"></textarea>
+        <div class="flex items-center gap-3">
+          <button type="button" class="bg-black text-white px-4 py-2 rounded">Enviar</button>
+          <small class="text-xs text-slate-500">ou ligue: (00) 1234-5678</small>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-white/90 mt-12">
+    <div class="max-w-6xl mx-auto p-6 text-sm text-slate-600 flex flex-col md:flex-row items-center justify-between">
+      <div>© <strong>Araujo Dojo</strong> — 40 anos de Kyokushin</div>
+      <div class="mt-2 md:mt-0">Feito com respeito à tradição • OSS</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Pequeno script: rolagem suave
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault(); const id=a.getAttribute('href'); if(id==='#')return; document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
